@@ -1,8 +1,10 @@
 -- Create Index to Optimize plan filtering and joins
-CREATE INDEX idx_plan_owner_type ON plans_plan(owner_id, is_regular_savings, is_a_fund);
+CREATE INDEX idx_plan_owner_type 
+	ON plans_plan(owner_id, is_regular_savings, is_a_fund);
 
 -- Create Index to Optimize savings aggregation
-CREATE INDEX idx_savings_plan_amount ON savings_savingsaccount(plan_id, confirmed_amount);
+CREATE INDEX idx_savings_plan_amount 
+	ON savings_savingsaccount(plan_id, confirmed_amount);
 
 SELECT 
     p.owner_id, 
