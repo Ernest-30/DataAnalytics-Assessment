@@ -24,6 +24,7 @@ This SQL query provides a summary of customer savings and investment behavior, i
 
 - Sorted by `total_deposits` to quickly highlight high-value customers for potential upselling or rewards.
 
+#### N/B: It is worthy to note that the result of this query did not return any data. This is because the dataset currently does not contain any customer who has both a savings plan and an investment plan simultaneously.
 
 
 ## ASSESSMENT_Q2
